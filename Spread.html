@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+       const setOne = ["aa", "bb", "cc", "dd","ee"];
+       const setTwo = ["xx","yy", "zz"];
+
+       const allset = [...setOne,...setTwo];
+       console.log(allset);
+
+       const person = {
+           name: "John",
+           age: 36,
+           place: "paris",
+       };
+
+       // copy of the object
+       const copyPerson = { ...person};
+
+       person.name = "Charlie";
+       console.log("the Person", person);
+       console.log("the person name from copy", copyPerson);
+   </script>
+</body>
+</html>
